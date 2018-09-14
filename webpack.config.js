@@ -82,7 +82,9 @@ var config = {
     //配置插件
     plugins:[
         // //重命名收集到的css合成文件,然后在index.html使用<link>标签导入
-        new ExtractTextWebpackPlugin('main.css'),
+        new ExtractTextWebpackPlugin({
+            filename:'[name].[hash:7].css',
+        }),
         new VueLoaderPlugin(),
     ]
 
