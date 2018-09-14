@@ -83,7 +83,7 @@ var config = {
     plugins:[
         // //重命名收集到的css合成文件,然后在index.html使用<link>标签导入
         new ExtractTextWebpackPlugin({
-            filename:'[name].[hash:7].css',
+            filename:'main.css',
         }),
         new VueLoaderPlugin(),
     ]
